@@ -34,14 +34,11 @@ The final analysis csv file procuded is titled en-wikipedia_traffic_200712-20210
 11. pageview_mobile_views (format: int value for number of views)
   a) This field contains the number of views on the mobile site and the mobile app for the updated Wikipedia format
 
-The naming convention for the json files outputed was "apiname_accesstype_firstmonth-lastmonth.json" 
-Months with 0 pageviews for a given access method (e.g. desktop-site, mobile-app) were listed as 0 and were not graphed in the final png output.
-
 Special considerations
 
 It should be noted that data from the Pageview API does not include spiders/crawlers, but the data from the Pagecounts API (or Legacy API) does contain this as there is no option to filter these out. 
 Mobile views from the Pagecounts API contains views from both the mobile site and the mobile app, while mobile views from the Pagecounts API is coming solely from the mobile site.
+The naming convention for the json files outputed was "apiname_accesstype_firstmonth-lastmonth.json" 
+Months with 0 pageviews for a given access method (e.g. desktop-site, mobile-app) were listed as 0 and were not graphed in the final png output.
 Additionally, there is about 1 year of overlapping traffic data between the two APIs which are both graphed in this analysis.
 
-
-contains information to reproduce the analysis, including data descriptions, attributions and provenance information, and descriptions of all relevant resources and documentation (inside and outside the repo) and hyperlinks to those resources.
